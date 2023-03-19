@@ -18,7 +18,7 @@ public class TaskController<taskList> {
                 );
     }
 
-    @GetMapping
+    @GetMapping("/tasks")
     List<Task> getTaskList(){
         return taskList;
     }
