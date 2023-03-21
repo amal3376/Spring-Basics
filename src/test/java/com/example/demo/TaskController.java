@@ -14,12 +14,15 @@ public class TaskController<taskList> {
         taskList = List.of(
           new Task(1,"task1", "description1", new Date()),
                 new Task(1,"task1", "description1", new Date()),
-                new Task(2,"task2", "description2", new Date())
-                );
+                new Task(2,"task2", "description2", new Date()),
+                new Task(3,"task2", "description3", new Date())
+        );
     }
 
     @GetMapping("/tasks")
-    List<Task> getTaskList(){
+    public List<Task> getTask(){
+
+
         return taskList;
     }
 }
