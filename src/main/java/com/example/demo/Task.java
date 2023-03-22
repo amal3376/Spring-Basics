@@ -3,12 +3,29 @@ package com.example.demo;
 import java.util.Date;
 
 public class Task {
-    int id;
+    public Integer getId() {
+        return id;
+    }
+
+    Integer id;
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
+    }
+
     String title;
     String description;
     Date dueDate;
 
-    public Task(int id, String title, String description, Date dueDate) {
+    public Task(Integer id, String title, String description, Date dueDate) {
         this.id = id;
         this.title = title;
         this.description = description;
